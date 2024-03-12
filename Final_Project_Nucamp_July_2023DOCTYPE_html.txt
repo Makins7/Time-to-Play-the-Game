@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css\JULYCOFFEEstyles.css" />
+    <!-- Remy Watson - Nucamp Week#4 Workshop Project-->
+    <title>July Coffee Shop</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="Remy Images\July Coffee Shop Logo.png" class="img-fluid" width="200" Height="100" />
+                    <img src="Remy Images\Coffee In The Raw.jpg" alt="Picture of a cup of cofee " Width="200"
+                        height="225" />
+                </div>
+                <div class="col">
+                    <h1>July Coffee Shop</h1>
+                    <h2>Serving Coffee July Hot!</h2>
+                    <a href="https://atlascoffeeclub.com/">Order Through Our Partner Atlas Coffee Club: (Click Here)</a>
+                    <div><a>Call: (718)123-4567</a></div>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox">Email:mail.google.com</a>
+                </div>
+                <!-- Button -->
+                <div class="col-md-4 col-xl-2 mt-4">
+                    <a href="#reserveForm" class="text-nowrap btn btn-lg btn-info" role="button" data-bs-toggle="modal"
+                        data-bs-target="#reserveModal"><button
+                            class="btn btn-info btn-lg text-white">Reservations</button>
+                    </a>
+                </div>
+    </header>
+    <!------- Navbar-------------->
+    <section>
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img src="Remy Images\July Coffee Shop Logo.png" height="30" width="30" /><a>Brooklyn - 69 Grand
+                            St. & Manhattan - 25 W 20th St. 20% First Time Discount! When You Join Our Coffee Club On
+                            Our Facebook Page! Tell A Friend And Receive A Free Gift!</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#July Coffee">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div>
+    </section>
+    <!---- Reservation Modal -------------------------------------------------------------------------------------->
+    </header>
+    <!--Create the new modal -->
+    <!-- Modal -->
+    <div class="modal fade" id="reserveModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h3 class="modal-title">Reserve A Date & Time</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                    </div>
+                    <!-- Form -->
+                    <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formadata"
+                        method="post">
+                        <div class="row mb-3">
+                            <label class="col-sm-6 col-form-label" for="numCoffee">Number Of Coffee Lovers</label>
+                            <div class="col">
+                                <select name="numCoffee" id="numCoffee" class="form-control">
+                                    <option selected>Select...</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-6 col-form-label" for="date">Date</label>
+                            <div class="col">
+                                <input class="form-control" type="date" name="date" id="date" placeholder="mm/dd/yyyy">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-6 col-form-label">Location</label>
+                            <div class="col-2 btn-group" role="group" aria-label="radio toggle button group">
+                                <input type="radio" class="btn-check" name="siteType" id="siteManhattan"
+                                    value="Manhattan">
+                                <label for="siteManhattan" class="btn btn-warning"><a
+                                        href="https://oldcountry.coffee/">Manhattan</label></a>
+                                <input type="radio" class="btn-check" name="siteType" id="siteBrooklyn"
+                                    value="Brooklyn">
+                                <label for="siteBrooklyn" class="btn btn-info"><a
+                                        href="https://www.devocion.com/">Brooklyn</label></a>
+                            </div>
+                        </div>
+                        <!-- Buttons -->
+                        <div class="row mb-3">
+                            <div class="col">
+                                <button data-bs-dismiss="modal" class="btn btn-danger">Cancel</button>
+                                <button type="submit" class="btn btn-success"><a
+                                        href="https://www.yelp.com/search?find_desc=Coffee">Search</button></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End Of Form -->
+    <!-------------------------------------------------------------------------------------------------------------->
+    <section>
+        <h3>Open 7 Days A Week! 6AM - 12 Midnight! We Do Catering & Private Parties! Free shipping over $50!</h3>
+
+        <div class="row row-content align-items-start review-section mb-3">
+            <div class="col-sm-4 col-md-3 order-sm-first">
+                <img src="Remy Images\diffcoffee800x600.webp" alt="Picture of several cups of coffees" Width="1400"
+                    height="850" />
+            </div>
+            <!------------------------------------------------>
+            <div class="row row-content align-items-start review-section mb-3">
+                <div class="col-sm-4 col-md-3 order-sm-first">
+                    <h2>What Are Happy Coffee Lovers Saying About July Coffee?</h2>
+                </div>
+                <div class="col ms-lg-5">
+                    <img src="img\happy-campers.png" img-thumbnail img-fluid d-flex
+                        alt="Picture of two coffee lovers." />
+                    <div class="col">
+                        <h3>So Good To The Last Drop!</h3>
+                        <p>"We had a blast! We had love, laughter and coffee, under a starlit sky, creating memories
+                            that we will cherish forever."</p>
+                    </div>
+                    <div class="d-flex justify-content-center  mt-5">
+                        <button class="campsite-btn" data-bs-toggle="modal"
+                            data-bs-target="#reserveModal">Reservations</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="Remy Images\Arabica & Robusta.jpg" class="img-fluid" width="400" Height="400" />
+                </div>
+                <ul class="no-bullets"></ul>
+                <a>Arabica</a>
+                <li>
+                    Arabica is the most popular type of coffee, hands down. Depending on who you ask, many coffee
+                    enthusiasts prefer using Arabica beans due to its taste. Typically used for black coffee, Arabica
+                    beans have a sweeter, more complex flavor that you can drink straight. Funny thing is, even though
+                    it’s the most popular, it doesn’t have as much caffeine as Robusta.
+                </li>
+                <a>Robusta</a>
+                <li>
+                    While Arabica is the most popular, Robusta is a cheaper and stronger type of coffee bean. Because of
+                    its bitter flavor, you’ll typically see Robusta used for espresso drinks and in instant coffee
+                    mixes.
+                </li>
+                <li>True coffee lover knows well there are different types of coffee, and will learn how to
+                    differentiate them and choose their favorite one among all the options. The truth is there is coffee
+                    for pretty much all preferences, from very strong ones, to the sweet affogato.
+                </li>
+                </ul>
+                <div>
+                    <img src="Remy Images\2Expresso.jpg" class="img-fluid" width="700" Height="400" />
+                    <span>Espresso or Short Black</span>
+                    <p>It is the foundation for most of the different types of coffee, it is the purest form.</p>
+                </div>
+                <div>
+                    <img src="Remy Images\Doppio.jpg" class="img-fluid" width="700" Height="400" />
+                    <span>Double Espresso or Doppio</span>
+                    <p>It consists in two shots of espresso in just one cup. It has a strong and heavy flavor.
+                    </p>
+                </div>
+                <div>
+                    <img src="Remy Images\Macchiato.jpg" class="img-fluid" width="500" Height="400" />
+                    <span>Macchiato</span>
+                    <p>It consists in two shots of espresso in just one cup. It has a strong and heavy flavor.
+                    </p>
+                </div>
+                <div>
+                    <img src="Remy Images\Ristretto.jpg" class="img-fluid" width="700" Height="400" />
+                    <span>Ristretto</span>
+                    <p>It is a more concentrated and darker version of the espresso, it consists in a standard espresso
+                        shot, prepared with only half of the amount of water.
+                    </p>
+                </div>
+                <div>
+                    <img src="Remy Images\Long Black.jpg" class="img-fluid" width="700" Height="400" />
+                    <span>Long Black or Americano</span>
+                    <p>This popular drink is a big favorite among all the different types of coffee. It is prepared by
+                        extracting one shot of espresso over a cup filled with 2/3rds of hot water.
+                    </p>
+                </div>
+                <div>
+                    <img src="Remy Images\Latte.jpg" class="img-fluid" width="500" Height="400" />
+                    <span>Café Latte</span>
+                    <p>It is served in a cup or a tumbler glass, with 1 shot of espresso, steamed milk and 1 cm
+                        micro-foam on top of the milk.
+                    </p>
+                </div>
+                <div>
+                    <img src="Remy Images\Cappuccino.jpg" class="img-fluid" width="600" Height="400" />
+                    <span>Cappuccino</span>
+                    <p>It is similar to the latte, the difference is that a Cappuccino has more foam (2-3 cm) on top,
+                        and chocolate sprinkle on top.
+                    </p>
+                </div>
+                <div>
+                    <img src="Remy Images\Flat White.jpg" class="img-fluid" width="700" Height="400" />
+                    <span>Flat White</span>
+                    <p>It is a traditional coffee in Australia and New Zealand, Flat White is very similar to the
+                        Cappuccino. The only difference between the two of them is that a Flat White doesn’t have any
+                        foam.
+                    </p>
+                </div>
+                <div>
+                    <img src="Remy Images\Piccolo Latte.jpg" class="img-fluid" width="700" Height="400" />
+                    <span>Piccolo Latte</span>
+                    <p> Commonly confused with a Macchiato, the Piccolo Latte consists in a shot of espresso served on
+                        an espresso cup, with steamed milk and a tiny portion of foam.
+                    </p>
+                </div>
+                <div>
+                    <img src="Remy Images\Mocha A Mocha.jpg" class="img-fluid" width="700" Height="400" />
+                    <span>Mocha</span>
+                    <p> A Mocha consists in a shot of espresso mixed with a spoon of chocolate powder, on top you have
+                        to add steamed milk and 2-3 cm of foam, finally some sprinkles of chocolate powder.
+                    </p>
+                </div>
+                <div>
+                    <img src="Remy Images\Affogato.jpg" class="img-fluid" width="700" Height="400" />
+                    <span>Affogato</span>
+                    <p> More than just a coffee, an Affogato is a dessert made of a single or double shot of espresso
+                        served over a scoop of vanilla ice-cream.
+                    </p>
+                </div>
+                <div>
+                    <img src="Remy Images\Irish Coffee.jpg" class="img-fluid" width="700" Height="400" />
+                    <span>Irish Coffee</span>
+                    <p> It is more commonly found on restaurants than in cafés because an Irish Coffee contains alcohol.
+                        This coffee is brewed with sugar, whiskey and a 2-3 cm layer of cream on top.</p>
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="Remy Images\Outdoor Coffee.jpg" class="img-fluid" width="200" Height="100" />
+                    <img src="Remy Images\coffee1.jpg" alt="Picture of a cup of coffee " Width="200" height="135" />
+                    <img src="Remy Images\coffee3.jpg" alt="Picture of a cup of coffee " Width="200" height="135" />
+                    <img src="Remy Images\coffee4.jpg" class="img-fluid" width="200" Height="100" />
+                    <img src="Remy Images\Coffee5.jpg" alt="Picture of a cup of coffee " Width="200" height="135" />
+                    <img src="Remy Images\coffee6.jpg" alt="Picture of a cup of coffee " Width="200" height="135" />
+                </div>
+            </div>
+    </section>
+    <footer>
+        (Click Our Logo Below To Go To Top Of Page) Call: (718)123-4567 For Our Location In Brooklyn! Call:
+        (212)123-4567 for Our Manhattan Location!
+        <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="Remy Images\July Coffee Shop Logo.png" height="30" width="30" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#JulyCoffeeNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    </footer>
+    <!-- Bootstrap JavaScript plugins.-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
